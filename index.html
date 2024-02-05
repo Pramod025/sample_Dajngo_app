@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Page</title>
+</head>
+<body bgcolor="lightblue">
+<h1>Addition</h1>
+
+<div>
+ 
+  <form action="{% url 'home' %}" method="POST">
+  {% csrf_token%}
+    <label for="add1">First Number</label>
+    <input type="text" id="add1" name="add1" placeholder="First Number..">
+
+   <label for="add2">Second Number</label>
+    <input type="text" id="add2" name="add2" placeholder="Second Number..">
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<h1>Result : {{result}}</h1>
+
+</body>
+</html>
+
