@@ -116,6 +116,9 @@ USE_I18N = True
 
 USE_TZ = True
 
+STATIC_URL = 'static/'
+STATICFILES_DIR = os.path.join(BASE_DIR,'static')
+STATICFILES_ROOT = os.path.join(BASE_DIR,'staticfiles_build','static')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
